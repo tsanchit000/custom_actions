@@ -50,7 +50,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v3
       - name: get dep custom
-        uses: ./ .github/actions/cache-dep
+        uses: ./ .github/actions/cache-dep/action.yml
       - name: Build website
         run: npm run build
       - name: Upload artifacts
